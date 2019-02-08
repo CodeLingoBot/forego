@@ -29,7 +29,7 @@ func (b *Barrier) Fall() {
 	})
 }
 
-// When `b.Fall()` is called, the channel returned by Barrier() is closed
+// Barrier; When `b.Fall()` is called, the channel returned by Barrier() is closed
 // (and becomes always readable)
 func (b *Barrier) Barrier() <-chan struct{} {
 	b.init()

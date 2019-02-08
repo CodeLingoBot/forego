@@ -72,7 +72,7 @@ func (of *OutletFactory) ErrorOutput(str string) {
 	os.Exit(1)
 }
 
-// Write out a single coloured line
+// WriteLine; out a single coloured line
 func (of *OutletFactory) WriteLine(left, right string, leftC, rightC ct.Color, isError bool) {
 	of.Lock()
 	defer of.Unlock()
